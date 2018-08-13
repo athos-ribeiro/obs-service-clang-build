@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+#
+export DH_VERBOSE=1
+DESTDIR=debian/obs-service-clang-build
+
+%:
+	dh $@
+
+override_dh_auto_build: ;
+
+override_dh_auto_test: ;
+
+override_dh_auto_install:
+	$(MAKE) DESTDIR=`pwd`/$(DESTDIR) PREFIX=/usr install

@@ -30,6 +30,12 @@ and trigger the target package build.
 Check the build log, searching for `Running build time source services...` to
 make sure your source service was triggered.
 
+## Additional resources
+
+- https://github.com/athos-ribeiro/salt-obs
+- https://github.com/opencollab/llvm-slave-salt
+- https://github.com/athos-ribeiro/obs-trigger-sid-builds
+
 # Licence
 
 obs-service-clang-build
